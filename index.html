@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dusk Rose Farm</title>
+  <meta name="description" content="Dusk Rose Farm — our animals, what’s available, and how to reach us." />
+  <meta name="theme-color" content="#050508" />
+  <link rel="icon" href="/assets/icons/favicon.png" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+  <a class="skip" href="#home">Skip to content</a>
+
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="#home" aria-label="Dusk Rose Farm home">
+        <span class="brand__mark" aria-hidden="true">🌹</span>
+        <span class="brand__text">
+          <span class="brand__name">Dusk Rose Farm</span>
+          <span class="brand__tag">Small farm • big heart</span>
+        </span>
+      </a>
+
+      <button class="navbtn" id="navBtn" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav">
+        <a href="#home">Home</a>
+        <a href="#animals">Our Animals</a>
+        <a href="#available">Available Animals</a>
+        <a href="#about">About the Farm</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section id="home" class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="kicker">Welcome to</p>
+          <h1>Dusk Rose Farm</h1>
+          <p class="lead">
+            A cozy little farm where we raise animals with care, share updates, and sometimes have animals available
+            for new homes.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn" href="#available">See what’s available</a>
+            <a class="btn btn--ghost" href="#contact">Message us</a>
+          </div>
+
+          <div class="hero__badges">
+            <div class="badge">
+              <span class="badge__title">Updates</span>
+              <span class="badge__text">Follow along on Facebook</span>
+            </div>
+            <div class="badge">
+              <span class="badge__title">Local</span>
+              <span class="badge__text">Pickup / meetups by appointment</span>
+            </div>
+            <div class="badge">
+              <span class="badge__title">Seasonal</span>
+              <span class="badge__text">Availability varies by time of year</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__media">
+          <div class="frame">
+            <img src="/pictures/fb_01.jpg" alt="Farm photo" loading="eager" />
+          </div>
+          <div class="strip" aria-hidden="true">
+            <img src="/pictures/fb_02.jpg" alt="" loading="lazy" />
+            <img src="/pictures/fb_03.jpg" alt="" loading="lazy" />
+            <img src="/pictures/fb_04.jpg" alt="" loading="lazy" />
+          </div>
+          <p class="hint">Replace these images with your favorites in <code>/pictures</code>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR ANIMALS -->
+    <section id="animals" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>Our Animals</h2>
+          <p class="muted">A quick overview — you can edit the list in <code>/assets/data/animals.json</code>.</p>
+        </div>
+
+        <div class="cards" id="animalsGrid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- AVAILABLE -->
+    <section id="available" class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <h2>Available Animals</h2>
+          <p class="muted">
+            We’ll keep this updated as best we can. Always message us to confirm availability.
+          </p>
+        </div>
+
+        <div class="notice" id="availabilityNote">
+          <div class="notice__title">Loading availability…</div>
+          <div class="notice__text">If this never loads, your site might be blocking local JSON. (GitHub Pages is fine.)</div>
+        </div>
+
+        <div class="list" id="availableList" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container about">
+        <div class="section__head">
+          <h2>About the Farm</h2>
+          <p class="muted">
+            Use this section for your “who we are” story. Keep it short, warm, and real.
+          </p>
+        </div>
+
+        <div class="about__grid">
+          <div class="panel">
+            <h3>What we do</h3>
+            <p>
+              We raise our animals with care, prioritize health and good handling, and share farm life updates along the way.
+              When we have animals available, we aim to match them with the right homes.
+            </p>
+          </div>
+          <div class="panel">
+            <h3>How sales work</h3>
+            <ul class="bullets">
+              <li>Availability is seasonal and limited.</li>
+              <li>Pickup/meetups are by appointment.</li>
+              <li>We’ll ask a few questions to make sure it’s a good fit.</li>
+            </ul>
+          </div>
+          <div class="panel">
+            <h3>Photos</h3>
+            <div class="gallery">
+              <img src="/pictures/fb_05.jpg" alt="Farm photo" loading="lazy" />
+              <img src="/pictures/fb_06.jpg" alt="Farm photo" loading="lazy" />
+              <img src="/pictures/fb_07.jpg" alt="Farm photo" loading="lazy" />
+              <img src="/pictures/fb_08.jpg" alt="Farm photo" loading="lazy" />
+            </div>
+            <p class="muted small">Swap these out anytime — just keep the filenames or update the HTML.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <h2>Contact</h2>
+          <p class="muted">Facebook is usually fastest. Store link is below. Email can be added later.</p>
+        </div>
+
+        <div class="contact contact--card">
+          <div class="panel contactCard">
+            <div class="contactCard__map" aria-hidden="true">
+              <div class="contactCard__mapInner">
+                <div class="contactCard__badge">
+                  <div class="contactCard__badgeDot" aria-hidden="true"></div>
+                  <div class="contactCard__badgeText">
+                    <div class="contactCard__name">Dusk Rose Farms</div>
+                    <div class="contactCard__sub" id="contactCity">Mooresville, NC</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="contactCard__body">
+              <div class="contactCard__row">
+                <img class="contactIcon" src="/assets/icons/pin.svg" alt="" aria-hidden="true" />
+                <div class="contactCard__stack">
+                  <div class="contactCard__label">Address</div>
+                  <div class="contactCard__value" id="contactAddress">122 Quail Hill Rd, Mooresville, NC 28115</div>
+                </div>
+              </div>
+
+              <div class="contactCard__row">
+                <img class="contactIcon" src="/assets/icons/directions.svg" alt="" aria-hidden="true" />
+                <div class="contactCard__stack">
+                  <div class="contactCard__label">Directions</div>
+                  <a class="contactCard__link" id="contactDirections" href="#" target="_blank" rel="noreferrer noopener">
+                    Open in Google Maps
+                  </a>
+                </div>
+              </div>
+
+              <div class="contactCard__row">
+                <img class="contactIcon" src="/assets/icons/phone.svg" alt="" aria-hidden="true" />
+                <div class="contactCard__stack">
+                  <div class="contactCard__label">Phone</div>
+                  <a class="contactCard__link" id="contactPhone" href="tel:+17046775957">+1 (704) 677-5957</a>
+                </div>
+              </div>
+
+              <div class="contactCard__row">
+                <img class="contactIcon" src="/assets/icons/clock.svg" alt="" aria-hidden="true" />
+                <div class="contactCard__stack">
+                  <div class="contactCard__label">Hours</div>
+                  <div class="contactCard__value" id="contactHours">Mon–Sat: 5:00 AM – 9:00 PM • Sun: By appointment</div>
+                </div>
+              </div>
+
+              <div class="contactCard__actions">
+            <a class="btn" id="fbLink" href="https://www.facebook.com/DuskRoseFarm/" target="_blank" rel="noreferrer noopener">
+                Facebook
+            </a>
+
+            <a class="btn btn--ghost" id="igLink" href="https://www.instagram.com/dusk_rose_farm/" target="_blank" rel="noreferrer noopener">
+                Instagram
+            </a>
+
+            <a class="btn btn--ghost" id="storeLink" href="https://dusk-rose-farm.square.site/" target="_blank" rel="noreferrer noopener">
+                Store (Square)
+            </a>
+            </div>
+
+              <div class="mini" style="margin-top:14px">
+                <div class="mini__row"><span class="mini__k">Website</span><span class="mini__v" id="siteUrl">duskrosefarm.org</span></div>
+                <div class="mini__row"><span class="mini__k">Email</span><span class="mini__v" id="emailVal">(coming soon)</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel">
+            <h3>Quick note</h3>
+            <p>
+              If you’re asking about an animal, please include:
+            </p>
+            <ul class="bullets">
+              <li>Which animal you’re interested in</li>
+              <li>Your experience level / setup</li>
+              <li>Your general location (for pickup planning)</li>
+            </ul>
+            <p class="muted small">This helps us respond faster and match animals to good homes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span id="year"></span> Dusk Rose Farm</span>
+      <span class="dot">•</span>
+      <a href="https://www.facebook.com/DuskRoseFarm/" target="_blank" rel="noreferrer noopener">Facebook</a>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

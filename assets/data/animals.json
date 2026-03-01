@@ -1,0 +1,40 @@
+{
+  "categories": [
+    {
+      "title": "Goats",
+      "items": [
+        "Dairy goats",
+        "Wethers",
+        "Kids (seasonal)"
+      ]
+    },
+    {
+      "title": "Chickens",
+      "items": [
+        "Egg layers",
+        "Chicks (seasonal)"
+      ]
+    },
+    {
+      "title": "Ducks",
+      "items": [
+        "Egg layers",
+        "Ducklings (seasonal)"
+      ]
+    },
+    {
+      "title": "Rabbits",
+      "items": [
+        "Meat rabbits",
+        "Grow-outs (seasonal)"
+      ]
+    },
+    {
+      "title": "Other",
+      "items": [
+        "Farm cats",
+        "Working dogs"
+      ]
+    }
+  ]
+}

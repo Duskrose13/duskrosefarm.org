@@ -1,0 +1,24 @@
+{
+  "updated": "2026-03-01",
+  "note": "Availability changes fast. Message us to confirm.",
+  "items": [
+    {
+      "name": "(Example) Goat kid",
+      "type": "Goat",
+      "status": "Waitlist",
+      "details": "Born spring. Bottle or dam-raised depending on season."
+    },
+    {
+      "name": "(Example) Chicken pullets",
+      "type": "Chicken",
+      "status": "Available",
+      "details": "Point-of-lay pullets. Pickup only."
+    },
+    {
+      "name": "(Example) Rabbit grow-outs",
+      "type": "Rabbit",
+      "status": "Ask",
+      "details": "Limited batches. Great for freezer camp."
+    }
+  ]
+}
