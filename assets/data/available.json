@@ -11,13 +11,13 @@
     {
       "name": "(Example) Chicken pullets",
       "type": "Chicken",
-      "status": "Available",
+      "status": "Unavailable",
       "details": "Point-of-lay pullets. Pickup only."
     },
     {
       "name": "(Example) Rabbit grow-outs",
       "type": "Rabbit",
-      "status": "Ask",
+      "status": "Unavailable",
       "details": "Limited batches. Great for freezer camp."
     }
   ]
